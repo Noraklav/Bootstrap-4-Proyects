@@ -4,7 +4,7 @@ body {
 
 .navbar {
   position: fixed;
-  background: #fff;
+  background: whitesmoke;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -17,8 +17,9 @@ body {
 
 .navbar .container button {
   outline: none;
-  border: 3.5px solid #333;
   color: #333;
+  background: whitesmoke;
+  border: none;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -43,9 +44,8 @@ body {
 #hero {
   background-image: url("../assets/hero.jpg");
   background-size: cover;
-  background-attachment: fixed;
-  min-width: 100%;
-  height: 60rem;
+  width: 100%;
+  height: 100vh;
   padding-top: 20px;
   color: whitesmoke;
   display: -webkit-box;
@@ -101,6 +101,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #333;
 }
 
 #products .main__container .text__container {
@@ -108,35 +109,194 @@ body {
 }
 
 #products .main__container .text__container h1 {
-  font-size: 3.3rem;
+  font-size: 2.9rem;
   margin-bottom: 2rem;
 }
 
-#products .main__container .row div {
-  z-index: 995;
-  padding: 0 1.2rem 1.2rem;
+#products .main__container .row .img-cont {
+  position: relative;
+  display: inline-block;
+}
+
+#products .main__container .row .img-cont img {
+  background-size: cover;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: auto;
 }
 
-#products .main__container .row div img {
-  -o-object-fit: cover;
-     object-fit: cover;
+#products .main__container .row .img-cont .product__title {
+  font-size: 1.8em;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+}
+
+#products .main__container .row .img-cont .product__desc {
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 5%;
+  left: 12%;
+}
+
+#team .main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+}
+
+#team .main__container .text__container {
+  margin: 5rem;
+}
+
+#team .main__container .text__container h1 {
+  font-size: 2.9rem;
+  margin-bottom: 2rem;
+}
+
+#team .main__container .row .img-cont {
+  position: relative;
+  display: inline-block;
+}
+
+#team .main__container .row .img-cont img {
+  background-size: cover;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
   width: 100%;
-  height: 100%;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  height: auto;
 }
 
-#products .main__container .row div img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+#team .main__container .row .img-cont .team__title {
+  font-size: 1.8em;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
 }
 
-@media only screen and (max-width: 600px) {
+#team .main__container .row .img-cont .team__desc {
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 5%;
+  left: 12%;
+}
+
+@media only screen and (max-width: 574px) {
   #hero .container-fluid h1 {
     font-size: 3rem;
+  }
+  #products .main__container .row .img-cont .product__text__container .product__title {
+    position: absolute;
+    font-size: 45px;
+    bottom: 60px;
+    left: 50px;
+  }
+  #products .main__container .row .img-cont .product__text__container .product__desc {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #team .main__container .row .img-cont .team__text__container .team__title {
+    position: absolute;
+    font-size: 45px;
+    bottom: 60px;
+    left: 50px;
+  }
+  #team .main__container .row .img-cont .team__text__container .team__desc {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  #products .main__container .row .img-cont .product__text__container .product__title {
+    position: absolute;
+    font-size: 25px;
+    bottom: 50px;
+    left: 40px;
+  }
+  #products .main__container .row .img-cont .product__text__container .product__desc {
+    position: absolute;
+    font-size: 15px;
+    bottom: 20px;
+    left: 40px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #products .main__container .row .img-cont .product__text__container .product__title {
+    position: absolute;
+    font-size: 25px;
+    bottom: 50px;
+    left: 40px;
+  }
+  #products .main__container .row .img-cont .product__text__container .product__desc {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #products .main__container .row .img-cont .product__text__container .product__title {
+    position: absolute;
+    font-size: 30px;
+    bottom: 50px;
+    left: 40px;
+  }
+  #products .main__container .row .img-cont .product__text__container .product__desc {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #products .main__container .row .img-cont .product__text__container .product__title {
+    position: absolute;
+    font-size: 45px;
+    bottom: 70px;
+    left: 40px;
+  }
+  #products .main__container .row .img-cont .product__text__container .product__desc {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #products .main__container .row .img-cont .product__text__container .product__title {
+    position: absolute;
+    font-size: 50px;
+    bottom: 70px;
+    left: 40px;
+  }
+  #products .main__container .row .img-cont .product__text__container .product__desc {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 /*# sourceMappingURL=main.css.map */
