@@ -5,5 +5,5 @@ const dataPlans = [
   {name: 'esMovistar', price: 1.799},
 ]
 
-const noUserPrice = seleccionar('#js__no-user')
-noUserPrice.innerHTML = dataPlans[0].price
+let userPrice = seleccionar('#js__is-user')
+userPrice.innerHTML = dataPlans[1].price

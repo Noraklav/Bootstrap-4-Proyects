@@ -22,8 +22,36 @@ html {
   font-size: 10px;
 }
 
-.nav {
-  height: 13.5rem;
+header {
+  height: 10rem;
+}
+
+header img {
+  position: absolute;
+  top: 2rem;
+  left: 6rem;
+  width: 5rem;
+}
+
+.plan-selection {
+  width: 100%;
+}
+
+.plan-selection a {
+  font-size: 1.4rem;
+  font-family: "Telefonica Reg";
+  padding-left: 7rem;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.plan-selection a span {
+  color: #b6b7b8;
+}
+
+.plan-selection a .active {
+  color: #0b2739;
+  border-bottom: 3px solid #019df4;
 }
 
 .hero__container {
@@ -32,13 +60,13 @@ html {
   display: flex;
   width: 100%;
   height: auto;
-  padding: 0;
+  padding-left: 7rem;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
   background-color: #019df4;
   background-image: url(../assets/Img-desktop-HogarFibra.jpg.png);
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -55,7 +83,7 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 48rem;
-  height: 41rem;
+  height: 38rem;
   font-family: "Telefonica Bold";
 }
 
@@ -77,7 +105,7 @@ html {
 }
 
 .hero__container .content .intro__text .plan__price {
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
 }
 
@@ -91,9 +119,9 @@ html {
 }
 
 .hero__container .content .plan__description .mes__gratis__plan {
-  border: 3px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
   border-radius: 15px;
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 
 .hero__container .content .plan__description .mes__gratis__plan span {
@@ -133,5 +161,36 @@ html {
   line-height: 1.7;
   margin: 0;
   letter-spacing: .7px;
+}
+
+.hero__container .content .form__container input, .hero__container .content .form__container button {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 5px 15px;
+  width: 25rem;
+  height: 3.5rem;
+  font-family: "Telefonica Light";
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #0b2739;
+}
+
+.hero__container .content .form__container button {
+  width: 11rem;
+  background: #b6b7b7;
+  font-family: "Telefonica Reg";
+  font-weight: 500;
+  margin-left: -3rem;
+  color: #f5f5f5;
+}
+
+.hero__container .content small {
+  width: 80%;
+  font-size: 1.2rem;
+  font-family: "Telefonica Light";
+  font-weight: 600;
+  color: #50535a;
 }
 /*# sourceMappingURL=main.css.map */

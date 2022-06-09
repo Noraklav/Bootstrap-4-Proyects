@@ -2,27 +2,51 @@
 
 html{font-size: 10px;}
 
-.nav{
-  height: 13.5rem;
+header{
+  height: 10rem;
+  img{
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+    width: 5rem;
+  }
+}
+
+.plan-selection{
+  width: 100%;
+  a{
+    font-size: 1.4rem;
+    font-family: $font1-r;
+    padding-left: 7rem;
+    margin-bottom: 5px;
+    text-decoration: none;
+    span{
+      color: #b6b7b8;
+    }
+    .active{
+      color: $text-color-dark;
+      border-bottom: 3px solid #019df4;
+    }
+  }
 }
 
 .hero__container{
   display: flex;
   width: 100%;
   height: auto;
-  padding: 0;
+  padding-left: 7rem;
   justify-content: left;
   background-color: #019df4;
   background-image: url(../assets/Img-desktop-HogarFibra.jpg.png);
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   .content{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
-    width: 48rem;
-    height: 41rem;
+    width: 85%;
+    height: 38rem;
     font-family: $font1-b;
     
     // Contenedor del primer bloque
@@ -43,7 +67,7 @@ html{font-size: 10px;}
       }
       // Planes desde $x
       .plan__price{
-        font-size: 32px;
+        font-size: 28px;
         margin: 0;
       }
     }
@@ -54,9 +78,9 @@ html{font-size: 10px;}
       justify-content: flex-start;
       // 1 mes gratis
       .mes__gratis__plan{
-        border: 3px solid $text-color-white;
+        border: 2px solid $text-color-white;
         border-radius: 15px;
-        padding: 10px 15px;
+        padding: 10px 20px;
         span{
           font-size: 3.4rem;
           font-family: $font2;
@@ -93,7 +117,35 @@ html{font-size: 10px;}
 
     // Contenedor del tercer bloque
     .form__container{
-      
+      input{
+        border: none;
+        outline: none;
+        border-radius: 25px;
+        padding: 5px 15px;
+        width: 25rem;
+        height: 3.5rem;
+        font-family: $font1-l;
+        font-weight: 400;
+        font-size: 1.4rem;
+        text-align: center;
+        color: $text-color-dark;
+      }
+      button{
+        @extend input;
+        width: 11rem;
+        background: #b6b7b7;
+        font-family: $font1-r;
+        font-weight: 500;
+        margin-left: -3rem;
+        color: $text-color-white;
     }
+  }
+  small{
+    width: 80%;
+    font-size: 1.2rem;
+    font-family: $font1-l;
+    font-weight: 600;
+    color: #50535a;
+  }
   }
 }
