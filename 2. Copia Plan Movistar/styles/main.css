@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Telefonica Light';
+  src: url("../assets/fonts/TelefonicaWeb-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Telefonica Reg';
+  src: url("../assets/fonts/TelefonicaWeb-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Telefonica Bold';
+  src: url("../assets/fonts/TelefonicaWeb-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Guthen Bloots';
+  src: url("../assets/fonts/Guthen Bloots Alt1.ttf");
+}
+
+html {
+  font-size: 10px;
+}
+
+.nav {
+  height: 13.5rem;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: #019df4;
+  background-image: url(../assets/Img-desktop-HogarFibra.jpg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 48rem;
+  height: 41rem;
+  font-family: "Telefonica Bold";
+}
+
+.hero__container .content .intro__text {
+  color: #0b2739;
+}
+
+.hero__container .content .intro__text .fibra__intro {
+  font-size: 2.5rem;
+  font-family: "Telefonica Reg";
+  margin: 5px 0 0 0;
+}
+
+.hero__container .content .intro__text .fibra__intro .text__bold {
+  font-family: "Telefonica Bold";
+  font-size: 3.5rem;
+  color: #f5f5f5;
+  text-transform: capitalize;
+}
+
+.hero__container .content .intro__text .plan__price {
+  font-size: 32px;
+  margin: 0;
+}
+
+.hero__container .content .plan__description {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.hero__container .content .plan__description .mes__gratis__plan {
+  border: 3px solid #f5f5f5;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.hero__container .content .plan__description .mes__gratis__plan span {
+  font-size: 3.4rem;
+  font-family: "Guthen Bloots";
+  color: #f5f5f5;
+}
+
+.hero__container .content .plan__description .plus__plan__symbol {
+  font-family: "Telefonica Light";
+  font-weight: 600;
+  font-size: 5.5rem;
+}
+
+.hero__container .content .plan__description .ahorras__plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f5f5;
+  color: #0b2739;
+  width: 20rem;
+  height: 10.3rem;
+  border-radius: 15px;
+}
+
+.hero__container .content .plan__description .ahorras__plan p {
+  text-align: center;
+  font-family: "Telefonica Light";
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.7;
+  margin: 0;
+  letter-spacing: .7px;
+}
+/*# sourceMappingURL=main.css.map */

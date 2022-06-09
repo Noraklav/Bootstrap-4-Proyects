@@ -131,27 +131,33 @@ body{
     .row{
       .img-cont{
         position: relative;
-        display: inline-block;
+        // display: inline-block;
         img{
           background-size: cover;
-          width: 25rem;
-          height: 25rem;
-          position: relative;
-          width: 100%;
+          width: auto;
+          height: 1rem;
           height: auto;
         }
         .team__title{
           font-size: 1.8em;
           position: absolute;
-          bottom: 15%;
+          bottom: 20%;
           left: 10%;
         }
         .team__desc{
           font-size: 1.2em;
           position: absolute;
-          bottom: 5%;
+          bottom: 15%;
           left: 12%;
-          // transform: translate(-10%, -10%);
+        }
+        .team__social__media{
+          font-size: 1.2em;
+          position: absolute;
+          bottom: 10%;
+          left: 12%;
+          .social__icon:nth-child(1){
+            padding: 0 0 0 1rem;
+          }
         }
       }
     }

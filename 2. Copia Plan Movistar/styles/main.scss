@@ -1,0 +1,99 @@
+@import 'config';
+
+html{font-size: 10px;}
+
+.nav{
+  height: 13.5rem;
+}
+
+.hero__container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  justify-content: left;
+  background-color: #019df4;
+  background-image: url(../assets/Img-desktop-HogarFibra.jpg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 48rem;
+    height: 41rem;
+    font-family: $font1-b;
+    
+    // Contenedor del primer bloque
+    .intro__text{
+      color: $text-color-dark;
+      // en tu hogar
+      .fibra__intro{
+        font-size: 2.5rem;
+        font-family: $font1-r;
+        margin: 5px 0 0 0;
+        // Internet Fibra
+        .text__bold{
+          font-family: $font1-b;
+          font-size: 3.5rem;
+          color: $text-color-white;
+          text-transform: capitalize;
+        }
+      }
+      // Planes desde $x
+      .plan__price{
+        font-size: 32px;
+        margin: 0;
+      }
+    }
+
+    // Contenedor del segundo bloque
+    .plan__description{
+      align-items: start;
+      justify-content: flex-start;
+      // 1 mes gratis
+      .mes__gratis__plan{
+        border: 3px solid $text-color-white;
+        border-radius: 15px;
+        padding: 10px 15px;
+        span{
+          font-size: 3.4rem;
+          font-family: $font2;
+          color: $text-color-white;
+        }
+      }
+      // +
+      .plus__plan__symbol{
+        font-family: $font1-l;
+        font-weight: 600;
+        font-size: 5.5rem;
+      }
+      // Ahorras...
+      .ahorras__plan{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $text-color-white;
+        color: $text-color-dark;
+        width: 20rem;
+        height: 10.3rem;
+        border-radius: 15px;
+        p{
+          text-align: center;
+          font-family: $font1-l;
+          font-size: 1.35rem;
+          font-weight: 600;
+          line-height: 1.7;
+          margin: 0;
+          letter-spacing: .7px;
+        }
+      }
+    }
+
+    // Contenedor del tercer bloque
+    .form__container{
+      
+    }
+  }
+}
