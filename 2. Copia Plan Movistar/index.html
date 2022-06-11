@@ -14,9 +14,12 @@
       <img src="assets/logo-movistar.svg" alt="">
     </header>
 
+    <button class="btn whatsapp__btn" id="whatsapp__redirection"><img src="assets/logo-whatsapp.svg"></button>
+
+
     <div class="plan-selection d-flex">
-      <a href="#" class="text-uppercase d-block"><span class="active">Si tu celu es movistar</span></a>
-      <a href="../tab2/tab2.html" class="text-uppercase d-block"><span>Si tu celu aún no es Movistar</span></a>
+      <div class=""><a href="pages/tab1.html" class="text-uppercase d-block"><span>Si tu celu es movistar</span></a></div>
+      <div class=""><a href="#" class="text-uppercase d-block active"><span>Si tu celu aún no es Movistar</span></a></div>
     </div>
 
     <section class="container-fluid hero__container">
@@ -24,15 +27,13 @@
 
         <div class="intro__text">
           <p class="fibra__intro"><span class="text__bold">Internet Fibra</span> en tu hogar</p>
-          <p class="plan__price font-weight-bold">Planes desde $<span id="js__is-user"></span></p>
+          <p class="plan__price font-weight-bold">Planes desde $<span id="js__no-user"></span></p>
         </div>
         
         <div class="plan__description d-flex">
           <div class="mes__gratis__plan d-flex align-center justify-content-center"><span>1 mes gratis</span></div>
           <span class="plus__plan__symbol mx-3">+</span>
           <div class="ahorras__plan"><p>Ahorrás $2000 x <br>mes<br> durante 23 meses</p></div>
-          <span class="plus__plan__symbol mx-3 mt-4">+</span>
-          <div class="ahorras__plan mt-5"><p>4GB gratis en tu <br>línea<br> movistar móvil</p></div>
         </div>
 
         <form action="#" class="form__container d-flex align-content-center">
@@ -40,14 +41,19 @@
           <button for="#" class="btn btn-secondary">Te llamamos</button>
         </form>
         <small class="form-text">Por favor, ingresá tu número con código de área sin el 0 y sin el 15 <br>(por ejemplo: 11 49999999)</small>
-
-
       </div>
     </section>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/precios.js"></script>
+    <script>
+      const planPrice = 2.199
+      let userPrice = document.querySelector('#js__no-user')
+      userPrice.innerHTML = planPrice
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

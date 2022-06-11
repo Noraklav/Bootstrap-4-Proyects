@@ -22,6 +22,18 @@ html {
   font-size: 10px;
 }
 
+.whatsapp__btn {
+  position: fixed;
+  right: 1%;
+  bottom: 7%;
+  z-index: 999;
+}
+
+.whatsapp__btn img {
+  width: 65px;
+  height: 65px;
+}
+
 header {
   height: 10rem;
 }
@@ -192,5 +204,135 @@ header img {
   font-family: "Telefonica Light";
   font-weight: 600;
   color: #50535a;
+}
+
+@media screen and (max-width: 440px) {
+  header {
+    height: 10rem;
+  }
+  header img {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    width: 6rem;
+  }
+  .plan-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #e9eae8;
+  }
+  .plan-selection div {
+    width: 15rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .plan-selection div a {
+    display: block;
+    height: 6rem;
+    padding: 5px;
+    background: white;
+    margin-right: 2rem;
+    border-radius: 7px;
+  }
+  .plan-selection div a span {
+    text-transform: none;
+    color: #b6b7b8;
+    padding: 0 5px;
+    font-weight: 400;
+  }
+  .plan-selection .active {
+    border-top: 4px solid #019df4;
+    border-radius: 7px 7px 0;
+    border-bottom: none;
+  }
+  .plan-selection .active span {
+    color: #019df4;
+    font-weight: 600;
+  }
+  .hero__container {
+    height: auto;
+    background-image: none;
+    padding: 0 0 3rem;
+  }
+  .hero__container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .hero__container .content .intro__text {
+    text-align: center;
+  }
+  .hero__container .content .intro__text .fibra__intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 0;
+    font-size: 3rem;
+  }
+  .hero__container .content .intro__text .fibra__intro .text__bold {
+    font-size: 4rem;
+  }
+  .hero__container .content .intro__text .plan__price {
+    font-size: 3.5rem;
+  }
+  .hero__container .content .plan__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem;
+  }
+  .hero__container .content .plan__description .mes__gratis__plan {
+    width: 22rem;
+    height: 9rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__container .content .plan__description .mes__gratis__plan span {
+    font-size: 4.5rem;
+  }
+  .hero__container .content .plan__description .plus__plan__symbol {
+    margin: -1.5rem;
+  }
+  .hero__container .content .plan__description .ahorras__plan {
+    width: 22rem;
+    height: 9rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__container .content .form__container {
+    width: 30rem;
+  }
+  .hero__container .content .form__container input, .hero__container .content .form__container button {
+    height: 4rem;
+  }
+  .hero__container .content .form__container button {
+    margin-left: -5rem;
+  }
+  .hero__container .content small {
+    margin-top: 4rem;
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

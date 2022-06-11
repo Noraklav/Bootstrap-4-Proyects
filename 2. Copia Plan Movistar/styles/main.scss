@@ -2,6 +2,17 @@
 
 html{font-size: 10px;}
 
+.whatsapp__btn{
+  position: fixed;
+  right: 1%;
+  bottom: 7%;
+  z-index: 999;
+  img{
+    width: 65px;
+    height: 65px;
+  }
+}
+
 header{
   height: 10rem;
   img{
@@ -45,7 +56,7 @@ header{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
-    width: 85%;
+    width: 48rem;
     height: 38rem;
     font-family: $font1-b;
     
@@ -147,5 +158,125 @@ header{
     font-weight: 600;
     color: #50535a;
   }
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+
+  header{
+    height: 10rem;
+    img{
+      position: absolute;
+      top: 2rem;
+      left: 4rem;
+      width: 6rem;
+    }
+  }
+
+  .plan-selection{
+    display: flex;
+    background: #e9eae8;
+    div{
+      width: 15rem;
+      margin-top: 1rem;
+      text-align: center;
+      a{
+        display: block;
+        height: 6rem;
+        padding: 5px;
+        background: white;
+        margin-right: 2rem;
+        border-radius: 7px;
+        span{
+          text-transform: none;
+          color: #b6b7b8;
+          padding: 0 5px;
+          font-weight: 400;
+        }
+        
+      }
+    }
+    .active{
+      border-top: 4px solid #019df4;
+      border-radius: 7px 7px 0;  
+      border-bottom: none;
+      span{
+        color: #019df4;
+        font-weight: 600;
+      }
+    }
+  }
+  
+  .hero__container{
+    height: auto;
+    background-image: none;
+    padding: 0 0 3rem;
+    .content{
+      display: flex;
+      flex-flow: column;
+      height: auto;
+      align-items: center;
+      justify-content: space-evenly;
+      // Contenedor del primer bloque
+      .intro__text{
+        text-align: center;
+        // en tu hogar
+        .fibra__intro{
+          display: flex;
+          flex-flow: column;
+          margin: 0;
+          font-size: 3rem;
+          .text__bold{
+            font-size: 4rem;
+          }
+        }
+        // Planes desde $x
+        .plan__price{
+          font-size: 3.5rem;
+        }
+      }
+  
+      // Contenedor del segundo bloque
+      .plan__description{
+        // 1 mes gratis
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        
+        .mes__gratis__plan{
+          width: 22rem;
+          height: 9rem;
+          align-items: center;
+          span{
+            font-size: 4.5rem;
+          }
+        }
+
+        .plus__plan__symbol{margin: -1.5rem;}
+
+        .ahorras__plan{
+          width: 22rem;
+          height: 9rem;
+          align-items: center;
+        }
+
+      }
+  
+      // Contenedor del tercer bloque
+      .form__container{
+        width: 30rem;
+        input{
+          height: 4rem;
+        }
+        button{
+          margin-left: -5rem;
+        }
+      }
+      small{
+        margin-top: 4rem;
+        font-size: 1.3rem;
+      }
+    }
   }
 }
