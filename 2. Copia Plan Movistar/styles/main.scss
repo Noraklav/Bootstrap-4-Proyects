@@ -89,9 +89,12 @@ header{
       justify-content: flex-start;
       // 1 mes gratis
       .mes__gratis__plan{
+        align-items: center;
         border: 2px solid $text-color-white;
         border-radius: 15px;
         padding: 10px 20px;
+        width: 18rem;
+        height: 8rem;
         span{
           font-size: 3.4rem;
           font-family: $font2;
