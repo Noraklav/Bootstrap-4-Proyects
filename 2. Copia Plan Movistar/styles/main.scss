@@ -1,6 +1,7 @@
 @import 'config';
 
 html{font-size: 10px;}
+*{box-sizing: border-box;}
 
 .whatsapp__btn{
   position: fixed;
@@ -8,8 +9,8 @@ html{font-size: 10px;}
   bottom: 7%;
   z-index: 999;
   img{
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
   }
 }
 
@@ -34,12 +35,13 @@ header{
     span{
       color: #b6b7b8;
     }
-    .active{
+    .active__desktop{
       color: $text-color-dark;
-      border-bottom: 3px solid #019df4;
+      border-bottom: 2px solid $main-color;
     }
   }
 }
+
 
 .hero__container{
   display: flex;
@@ -47,7 +49,7 @@ header{
   height: auto;
   padding-left: 7rem;
   justify-content: left;
-  background-color: #019df4;
+  background-color: $main-color;
   background-image: url(../assets/Img-desktop-HogarFibra.jpg.png);
   background-size: 100%;
   background-position: center;
@@ -165,6 +167,155 @@ header{
 }
 
 
+.planes__container{
+  *{font-family: $font1-r;}
+  .card{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border-radius: 25px;
+    filter: drop-shadow(2px 2px 3px rgba(170, 170, 170, .4));
+    // Internet Movistar Fibra
+    .internet__title{
+      color: #50535a;
+      font-size: 14px;
+      font-family: $font1-r;
+    }
+    // Mundo + X Mb + Precio x mes
+    .precio__por__mes{
+      display: flex;
+      justify-content: center;
+      
+      .megas{
+        flex-flow: column;
+        height: auto;
+        font-family: $font1-r;
+        .mb__content{
+          .icon{
+            font-size: 30px;
+            color: $main-color;
+          }
+          .mb__texto{
+            font-size: 22px;
+            font-family: $font1-b;
+          }
+        }
+        h3{
+          font-size: 30px;
+        }
+        small{
+          font-size: 12px;
+          font-family: $font1-l;
+          span{
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+
+    // 1 mes gratis + $x de ahorro x mes
+    .mes__ahorro{
+      display: flex;
+      flex-flow: column;
+      font-family: $font1-l;
+      letter-spacing: .1px;
+      .mes__gratis{
+        font-size: 1.27rem;
+      }
+      .ahorro__mes{
+        font-size: 1.17rem;
+      }
+    }
+
+    // Banda celeste
+    .promo__exclusiva{
+      width: 100%;
+      background: $main-color;
+      font-size: 1.2rem;
+      font-family: $font1-b;
+      color: white;
+    }
+
+    // M TV + Suma movistar...
+    .promo__movistar{
+      @include flexCenter;
+      .promo__movistar__container{
+        display: flex;
+        align-items: center;
+        img{
+          height: auto;
+        }
+        &__texto{
+          display: flex;
+          flex-flow: column;
+          align-items: start;
+          color: #4a4a4a;
+          font-size: 1.2rem;
+          
+          span:nth-child(1){
+            font-family: $font1-b;
+          }
+        }
+      }
+    }
+
+    // Elegi tu plan de TV
+    .elegi-tu-plan{
+      padding: 0;
+      .dropdown{
+        align-items: center;
+        justify-content: space-evenly;
+        color: #008dbb;
+        span{
+          font-family: $font1-b;
+          font-size: 1.8rem;
+        }
+        .elegi-tu-plan__icon{font-size: 2rem;}
+        
+      }
+
+      .elegi-tu-plan__items{
+        display: flex;
+        flex-flow: column;
+        .plan__digital{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 3.2rem;
+          border-top: 1px solid rgb(206, 206, 206);
+          border-bottom: 1px solid rgb(206, 206, 206);
+          .item{
+            display: flex;
+            flex-flow: column;
+            text-align: left;
+            &:nth-child(1){
+              font-size: 1.15rem;
+            }
+          }
+          @include toggleButton;
+        }
+        .plan__max{@extend .plan__digital; border-top: none;}
+      }
+    }
+
+    // Lo quiero (Boton)
+    .plan__select__btn{
+      background: $text-color-dark;
+      color: white;
+      margin: 3rem 3.5rem 5rem;
+      font-size: 1.7rem;
+      font-family: $font1-b;
+      height: 5rem;
+      border-radius: 5rem;
+    }
+
+  }
+}
+
+// 
+
 @media screen and (max-width: 440px) {
 
   header{
@@ -201,17 +352,22 @@ header{
       }
     }
     .active{
-      border-top: 4px solid #019df4;
+      border-top: 4px solid $main-color;
       border-radius: 7px 7px 0;  
       border-bottom: none;
       span{
-        color: #019df4;
+        color: $main-color;
         font-weight: 600;
+      }
+      .active__desktop{
+        border-bottom: none;
       }
     }
   }
   
   .hero__container{
+    display: flex;
+    justify-content: center;
     height: auto;
     background-image: none;
     padding: 0 0 3rem;

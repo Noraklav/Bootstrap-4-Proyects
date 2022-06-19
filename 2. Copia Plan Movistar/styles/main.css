@@ -22,6 +22,11 @@ html {
   font-size: 10px;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .whatsapp__btn {
   position: fixed;
   right: 1%;
@@ -30,8 +35,8 @@ html {
 }
 
 .whatsapp__btn img {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
 }
 
 header {
@@ -61,9 +66,9 @@ header img {
   color: #b6b7b8;
 }
 
-.plan-selection a .active {
+.plan-selection a .active__desktop {
   color: #0b2739;
-  border-bottom: 3px solid #019df4;
+  border-bottom: 2px solid #019df4;
 }
 
 .hero__container {
@@ -211,6 +216,290 @@ header img {
   color: #50535a;
 }
 
+.planes__container * {
+  font-family: "Telefonica Reg";
+}
+
+.planes__container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  border-radius: 25px;
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(170, 170, 170, 0.4));
+          filter: drop-shadow(2px 2px 3px rgba(170, 170, 170, 0.4));
+}
+
+.planes__container .card .internet__title {
+  color: #50535a;
+  font-size: 14px;
+  font-family: "Telefonica Reg";
+}
+
+.planes__container .card .precio__por__mes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.planes__container .card .precio__por__mes .megas {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: auto;
+  font-family: "Telefonica Reg";
+}
+
+.planes__container .card .precio__por__mes .megas .mb__content .icon {
+  font-size: 30px;
+  color: #019df4;
+}
+
+.planes__container .card .precio__por__mes .megas .mb__content .mb__texto {
+  font-size: 22px;
+  font-family: "Telefonica Bold";
+}
+
+.planes__container .card .precio__por__mes .megas h3 {
+  font-size: 30px;
+}
+
+.planes__container .card .precio__por__mes .megas small {
+  font-size: 12px;
+  font-family: "Telefonica Light";
+}
+
+.planes__container .card .precio__por__mes .megas small span {
+  text-decoration: line-through;
+}
+
+.planes__container .card .mes__ahorro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  font-family: "Telefonica Light";
+  letter-spacing: .1px;
+}
+
+.planes__container .card .mes__ahorro .mes__gratis {
+  font-size: 1.27rem;
+}
+
+.planes__container .card .mes__ahorro .ahorro__mes {
+  font-size: 1.17rem;
+}
+
+.planes__container .card .promo__exclusiva {
+  width: 100%;
+  background: #019df4;
+  font-size: 1.2rem;
+  font-family: "Telefonica Bold";
+  color: white;
+}
+
+.planes__container .card .promo__movistar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.planes__container .card .promo__movistar .promo__movistar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planes__container .card .promo__movistar .promo__movistar__container img {
+  height: auto;
+}
+
+.planes__container .card .promo__movistar .promo__movistar__container__texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: #4a4a4a;
+  font-size: 1.2rem;
+}
+
+.planes__container .card .promo__movistar .promo__movistar__container__texto span:nth-child(1) {
+  font-family: "Telefonica Bold";
+}
+
+.planes__container .card .elegi-tu-plan {
+  padding: 0;
+}
+
+.planes__container .card .elegi-tu-plan .dropdown {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #008dbb;
+}
+
+.planes__container .card .elegi-tu-plan .dropdown span {
+  font-family: "Telefonica Bold";
+  font-size: 1.8rem;
+}
+
+.planes__container .card .elegi-tu-plan .dropdown .elegi-tu-plan__icon {
+  font-size: 2rem;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3.2rem;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .item, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: left;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .item:nth-child(1), .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .item:nth-child(1) {
+  font-size: 1.15rem;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .switch, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .switch {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 25px;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .switch input, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .switch input, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .switch .hero__container .content .form__container button, .hero__container .content .form__container .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .switch button, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .switch .hero__container .content .form__container button, .hero__container .content .form__container .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .switch button {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .slider, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .slider:before, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital input:checked + .slider, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max input:checked + .slider, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .hero__container .content .form__container button:checked + .slider, .hero__container .content .form__container .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital button:checked + .slider, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .hero__container .content .form__container button:checked + .slider, .hero__container .content .form__container .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max button:checked + .slider {
+  background-color: #019df4;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital input:checked + .slider:before, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max input:checked + .slider:before, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .hero__container .content .form__container button:checked + .slider:before, .hero__container .content .form__container .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital button:checked + .slider:before, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .hero__container .content .form__container button:checked + .slider:before, .hero__container .content .form__container .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max button:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+          transform: translateX(16px);
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital input:focus + .slider, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max input:focus + .slider, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .hero__container .content .form__container button:focus + .slider, .hero__container .content .form__container .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital button:focus + .slider, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .hero__container .content .form__container button:focus + .slider, .hero__container .content .form__container .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max button:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #019df4;
+          box-shadow: 0 0 1px #019df4;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .slider.round, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .slider.round {
+  border-radius: 25px;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__digital .slider.round:before, .planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max .slider.round:before {
+  border-radius: 50%;
+}
+
+.planes__container .card .elegi-tu-plan .elegi-tu-plan__items .plan__max {
+  border-top: none;
+}
+
+.planes__container .card .plan__select__btn {
+  background: #0b2739;
+  color: white;
+  margin: 3rem 3.5rem 5rem;
+  font-size: 1.7rem;
+  font-family: "Telefonica Bold";
+  height: 5rem;
+  border-radius: 5rem;
+}
+
 @media screen and (max-width: 440px) {
   header {
     height: 10rem;
@@ -255,7 +544,16 @@ header img {
     color: #019df4;
     font-weight: 600;
   }
+  .plan-selection .active .active__desktop {
+    border-bottom: none;
+  }
   .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: auto;
     background-image: none;
     padding: 0 0 3rem;
