@@ -32,11 +32,26 @@ html {
   right: 1%;
   bottom: 7%;
   z-index: 999;
+  border-radius: 50px;
+  background: #30a340;
+  overflow: hidden;
 }
 
 .whatsapp__btn img {
   width: 55px;
   height: 55px;
+}
+
+.whatsapp__btn:hover img {
+  width: 55px;
+  height: 55px;
+}
+
+.whatsapp__btn:hover::after {
+  content: 'Te ayudamos a comprar';
+  font-size: 1.6rem;
+  color: white;
+  padding-right: 1rem;
 }
 
 header {
