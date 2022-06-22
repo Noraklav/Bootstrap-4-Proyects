@@ -184,6 +184,7 @@ header{
 
 .planes__container{
   *{font-family: $font1-r; user-select: none;}
+  flex-wrap: wrap;
   .card{
     display: flex;
     flex-flow: column;
@@ -325,6 +326,7 @@ header{
       &.active .option{
         display: block;
         height: auto;
+        margin-bottom: 17rem;
       }
 
       .option{

@@ -6,8 +6,7 @@ userPrice.innerHTML = planPrice
 
 // Dropdown card plan TV
 let dropdown = document.querySelectorAll('.dropdown')
-dropdown.forEach(e => e.onclick = () => e.classList.toggle('active'))
-
+  dropdown.forEach(e => e.onclick = () => e.classList.toggle('active'))
 
 const planes = [
   {id: 0, megas: 100, precioMegas: 2.199, precioViejo: 4.199},
@@ -19,7 +18,6 @@ const planes = [
 let planMegas = document.querySelectorAll('.js__plan-gigas')
 let megasPrecio = document.querySelectorAll('.js__plan-precio')
 let megasPrecioViejo = document.querySelectorAll('.js__plan-precio-viejo')
-
 
 const printData = (array, option) =>{
   let len = array.length

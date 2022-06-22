@@ -231,6 +231,11 @@ header img {
   color: #50535a;
 }
 
+.planes__container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .planes__container * {
   font-family: "Telefonica Reg";
   -webkit-user-select: none;
@@ -438,6 +443,7 @@ header img {
 .planes__container .card .dropdown.active .option {
   display: block;
   height: auto;
+  margin-bottom: 17rem;
 }
 
 .planes__container .card .dropdown .option {
